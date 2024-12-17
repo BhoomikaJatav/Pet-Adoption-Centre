@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Center</title>
+    <link rel="stylesheet" href="demo1.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Pet Adoption Center</h1>
+    <nav>
+      <ul>
+        <li><a href="#pets">Available Pets</a></li>
+        <li><a href="#adopt-form">Adopt a Pet</a></li>
+        <li><a href="#success-stories">Success Stories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Available Pets Section -->
+  <section id="pets">
+    <h2>Available Pets</h2>
+    <div class="pet-profile">
+      <img src="huskey.jpg" alt="Dog">
+      <h3>Buddy</h3>
+      <p>Breed: Husky </p>
+      <p>Age: 2 months</p>
+      <button onclick="openAdoptForm('Buddy')">Adopt Buddy</button>
+    </div>
+    <div class="pet-profile">
+      <img src="cat.jpg" alt="Cat">
+      <h3>Whiskers</h3>
+      <p>Breed: Japanese Bobtail</p>
+      <p>Age: 3 months</p>
+      <button onclick="openAdoptForm('Whiskers')">Adopt Whiskers</button>
+    </div>
+    <div class="pet-profile">
+        <img src="Golden retriever.jpg" alt="dog">
+        <h3>Whiskers</h3>
+        <p>Breed: Japanese Bobtail</p>
+        <p>Age: 2 months</p>
+        <button onclick="openAdoptForm('goldie')">Adopt Whiskers</button>
+      </div>
+    <!-- Add more pet profiles as needed -->
+  </section>
+
+  <!-- Adoption Form Section -->
+  <section id="adopt-form">
+    <h2>Adopt a Pet</h2>
+    <form id="form" onsubmit="submitForm(event)">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="pet">Pet to Adopt:</label>
+      <input type="text" id="pet" readonly>
+
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Success Stories Section -->
+  <section id="success-stories">
+    <h2>Success Stories</h2>
+    <div class="story">
+      <h3>Max's New Home</h3>
+      <p>Max, the Labrador, was adopted by a lovely family and is now living happily in their home. He enjoys daily walks and playing fetch in the park!</p>
+    </div>
+    <div class="story">
+      <h3>Luna's Journey</h3>
+      <p>Luna, the playful kitten, was adopted by a couple who were looking for a loving pet. She now spends her days chasing toys and getting lots of cuddles!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Pet Adoption Center | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
